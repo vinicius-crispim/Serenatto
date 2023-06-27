@@ -47,3 +47,14 @@ body {
 .botao-padrao {
   background-color:var(--marrom-claro);
 }
+
+.botao-padrao:hover {
+  background-color:var(--marrom-escuro);
+}
+
+.accordion-bg button{
+  background: var(--marrom-claro);
+}
+.accordion-bg button:hover{
+  background: var(--marrom-escuro);
+}
