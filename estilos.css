@@ -2,4 +2,18 @@ body {
   --bege: #E6E0D6;
   --marrom-escuro: #816D4F;
   --marrom-claro: #B29463;
+  font-family: 'Barlow', sans-serif;
+}
+
+.checkinput {
+  border: 2px solid var(--marrom-claro);
+  box-shadow: none;
+}
+
+.checkinput:focus,
+.checkinput:checked {
+  background-color: var(--marrom-claro);
+  border-color: var(--marrom-claro);
+  outline: none;
+  box-shadow: none;
 }
