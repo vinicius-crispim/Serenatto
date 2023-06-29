@@ -32,7 +32,7 @@
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/logo-mobile.png"
                 alt="Logo da Serenatto cafê e bistrô"></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -70,11 +70,11 @@
       </div>
     </section>
     <section class="py-4">
-      <h2 class="text-center fw-bold pb-1">Nossos serviços</h2>
+      <h2 class="text-center fw-bold py-2">Nossos serviços</h2>
 
       <div class="container d-flex justify-content-around flex-wrap">
 
-        <div class="card m-4" style="width: 21rem;">
+        <div class="card m-4 rounded-0" style="width: 21rem;">
           <img src="./assets/cafe-card.png" class="card-img-top"
             alt="Balcão de padaria tradicional com alimentos diversos">
           <div class="card-body">
@@ -87,7 +87,7 @@
           </div>
         </div>
 
-        <div class="card m-4" style="width: 21rem;">
+        <div class="card m-4 rounded-0" style="width: 21rem;">
           <img src="./assets/buffet-card.png" class="card-img-top" alt="Mesa de buffet com alimentos diversos">
           <div class="card-body">
             <h5 class="card-title fw-bold">Buffet</h5>
@@ -99,7 +99,7 @@
           </div>
         </div>
 
-        <div class="card m-4" style="width: 21rem;">
+        <div class="card m-4 rounded-0" style="width: 21rem;">
           <img src="./assets/delivery-card.png" class="card-img-top" alt="Caixa aberta armazenando comidas diversas">
           <div class="card-body">
             <h5 class="card-title fw-bold">Delivery</h5>
@@ -119,8 +119,8 @@
           Também oferecemos ambiente de coworking!</p>
       </div>
     </section>
-    <section class="py-4">
-      <h2 class="fw-bold mb-4 text-center">Nossos produtos</h2>
+    <section>
+      <h2 class="fw-bold text-center">Nossos produtos</h2>
       <!-- <div class="card" style="width: 15rem;">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
@@ -130,7 +130,7 @@
 
       <div class="container d-flex justify-content-evenly flex-wrap gap-3 align-items-center">
 
-        <div class="card border-0 rounded-0" style="width: 17rem;">
+        <div class="card border-0 btn" style="width: 17rem;" data-bs-toggle="modal" data-bs-target="#cafesTradModal">
           <img src="./assets/produtos-cafe-tradicional.png" class="card-img-top" alt="Xicara de café">
           <div class="card-body text-center">
             <h3 class="card-text fw-bold">Cafés Tradicionais</h3>
@@ -138,7 +138,7 @@
         </div>
 
 
-        <div class="card border-0 rounded-0" style="width: 17rem;">
+        <div class="card border-0 btn" style="width: 17rem;" data-bs-toggle="modal" data-bs-target="#cafesEspModal">
           <img src="./assets/produtos-cafe-especial.png" class="card-img-top" alt="Xicara de café capuccino">
           <div class="card-body text-center">
             <h3 class="card-text fw-bold">Cafés Especiais</h3>
@@ -146,22 +146,23 @@
         </div>
 
 
-        <div class="card border-0 rounded-0" style="width: 17rem;">
-          <img src="./assets/produtos-vitaminas.png" class="card-img-top" alt="Copos de vitaminas">
+        <div class="card border-0 btn" style="width: 17rem;" data-bs-toggle="modal" data-bs-target="#smoothiesModal">
+          <img src="./assets/produtos-vitaminas.png" class="card-img-top" alt="Copos de vitamina">
           <div class="card-body text-center">
             <h3 class="card-text fw-bold">Smoothies e Vitaminas</h3>
           </div>
         </div>
-      
-        <div class="card border-0 rounded-0" style="width: 17rem;">
-          <img src="./assets/produtos-paes.png" class="card-img-top" alt="Cesta de pães com diversos pães dentro e na frente">
+
+        <div class="card border-0 btn" style="width: 17rem;" data-bs-toggle="modal" data-bs-target="#paesModal">
+          <img src="./assets/produtos-paes.png" class="card-img-top"
+            alt="Cesta de pães com diversos pães dentro e na frente">
           <div class="card-body text-center">
             <h3 class="card-text fw-bold">Pães e Focaccias</h3>
           </div>
         </div>
 
 
-        <div class="card border-0 rounded-0" style="width: 17rem;">
+        <div class="card border-0 btn" style="width: 17rem;" data-bs-toggle="modal" data-bs-target="#docesModal">
           <img src="./assets/produtos-doces.png" class="card-img-top" alt="Bolo de morango">
           <div class="card-body text-center">
             <h3 class="card-text fw-bold">Doces</h3>
@@ -169,7 +170,7 @@
         </div>
 
 
-        <div class="card border-0 rounded-0" style="width: 17rem;">
+        <div class="card border-0 btn" style="width: 17rem;" data-bs-toggle="modal" data-bs-target="#salgadosModal">
           <img src="./assets/produtos-salgados.png" class="card-img-top" alt="Pizza de queijo">
           <div class="card-body text-center">
             <h3 class="card-text fw-bold">Salgados</h3>
@@ -186,7 +187,7 @@
   <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-1" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasRightLabel">Café & Bistrô</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
     </div>
     <div class="offcanvas-body">
       <div class="accordion" id="accordionExample">
@@ -314,6 +315,151 @@
     </div>
   </div>
 
+  <!-- modal 1 - Cafés Tradicionais -->
+
+  <div class="modal fade" id="cafesTradModal" tabindex="-1" aria-labelledby="ModalCafesTradicionais" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="cafesTradModal">Cafés tradicionais</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center">
+          <img src="./assets/produtos-cafe-tradicional.png" alt="Xicara de café">
+          <p>O café Serenatto é conhecido por seus blends tradicionais e saborosos, que agradam aos amantes da bebida.
+            Nossos grãos são cuidadosamente selecionados e torrados para produzir um aroma rico e sabor equilibrado.</p>
+          <p class="mb-0"> Entre os cafés mais tradicionais da casa, destaca-se o "Café Serenatto", um blend exclusivo
+            de
+            grãos com notas de chocolate e caramelo. Outra opção popular é o "Café Italiano", um café expresso encorpado
+            e intenso. Já o "Café Cappuccino" é uma escolha clássica para quem prefere uma bebida cremosa e suave.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn w-25 botao-padrao mx-auto" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 2 - Cafés Especiais -->
+
+  <div class="modal fade" id="cafesEspModal" tabindex="-1" aria-labelledby="ModalCafesEspeciais" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="cafesEspModal">Cafés tradicionais</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center">
+          <img src="./assets/produtos-cafe-especial.png" alt="Xicara de café capuccino">
+          <p>Somos conhecidos também por nossos cafés especiais, que são cuidadosamente preparados com grãos
+            selecionados de alta qualidade e técnicas de preparo precisas.</p>
+          <p class="mb-0">Entre as opções de cafés especiais do Café & Bistrô Serenatto, destacamos o café aeropress,
+            que é preparado com uma técnica de imersão e pressão, resultando em uma bebida de sabor intenso e aroma
+            acentuado. Outra opção popular é o café Hario V60, que é preparado com um filtro de papel em formato de cone
+            e resulta em uma bebida limpa e suave, ressaltando as notas sensoriais dos grãos. Além disso, oferecemos uma
+            variedade de bebidas geladas, como o café gelado, que é preparado com grãos torrados escuros e servido com
+            gelo e leite, resultando em uma bebida refrescante e saborosa.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn w-25 botao-padrao mx-auto" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 3 - Smoothies e Vitaminas -->
+
+  <div class="modal fade" id="smoothiesModal" tabindex="-1" aria-labelledby="SmoothiesVitaminasEspeciaisModal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="smoothiesModal">Smoothies e Vitaminas</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center">
+          <img src="./assets/produtos-vitaminas.png" alt="Copos de vitamina">
+          <p>Somos conhecidos também por nossas vitaminas, que são cuidadosamente preparados com frutas
+            selecionadas de alta qualidade e técnicas de preparo precisas.</p>
+          <p class="mb-0">As vitaminas são moléculas orgânicas fundamentais para nossa saúde e encontradas em nossos
+            alimentos. Apesar de serem essenciais, as vitaminas não precisam ser ingeridas em grande quantidade, como é
+            o caso dos carboidratos.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn w-25 botao-padrao mx-auto" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 4 - Pães e Focaccias -->
+
+  <div class="modal fade" id="paesModal" tabindex="-1" aria-labelledby="PaesEFocacciasModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="paesModal">Pães e Focaccias</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center">
+          <img src="./assets/produtos-paes.png" alt="Cesta com diversos tipos de pães">
+          <p>Temos diversos tipos de pães feitos com as melhores tecnicas e com muito carinho para você, vale a pena
+            conferir</p>
+          <p class="mb-0">O pão, alimento preparado com farinha, geralmente de trigo ou outro cereal, água e sal, está
+            presente na mesa de todos os povos e classes sociais.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn w-25 botao-padrao mx-auto" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 5 - Doces -->
+
+  <div class="modal fade" id="docesModal" tabindex="-1" aria-labelledby="DocesModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="docesModal">Doces</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center">
+          <img src="./assets/produtos-doces.png" alt="Bolo com cobertura de morango">
+          <p>Aqui nos temos os melhores bolos, produzidos diariamente com todo o carinho e cuidado necessário para
+            adoçar o seu dia e torná-lo melhor.</p>
+          <p class="mb-0">Temos diversos bolos aqui e a pronta entrega, porém fazemos sua encomenda para datas especiais
+            com todas as especifidades desejadas.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn w-25 botao-padrao mx-auto" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 6 - Salgados -->
+
+  <div class="modal fade" id="salgadosModal" tabindex="-1" aria-labelledby="salgadosModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="salgadosModal">Salgados</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center">
+          <img src="./assets/produtos-salgados.png" alt="Pizza de queijo">
+          <p>Aqui nos temos os melhores salgados, ofertamos uma grande variedade, desde coxinhas, pastéis, risóles, até
+            pedaços de pizza.</p>
+          <p class="mb-0">Venha buscar o seu, caso não queira ou consiga vir até nós, peça por delivery que nós levamos quentinho e de forma rápida para você!
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn w-25 botao-padrao mx-auto" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
