@@ -43,7 +43,7 @@
                 <a class="nav-link" href="#">Sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
+                <a class="nav-link" href="#contato">Contato</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link">
@@ -180,7 +180,45 @@
       </div>
 
     </section>
+
     <section class="banners banners-3 d-flex flex-column justify-content-center my-5"> </section>
+
+    <section class="container my-5">
+      <div class="border border-2 rounded p-3">
+        <h2 class="fw-bold text-center">Entre em contato conosco!</h2>
+        <form class="p-3" id="contato">
+          <div class="mb-3 form-floating">
+            <input type="text" class="form-control" id="inputName" placeholder="Nome" />
+            <label for="inputName">Nome</label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" />
+            <label for="inputEmail">Email</label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input type="number" class="form-control" id="inputTel" placeholder="Telefone" />
+            <label for="inputTel">Telefone</label>
+          </div>
+          <div class="mb-3">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Preferência de contato</option>
+              <option value="1">Email</option>
+              <option value="2">WhatsApp</option>
+              <option value="3">SMS</option>
+            </select>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="notificacaoCheck" />
+            <label class="form-check-label" for="exampleCheck1">Deseja receber novidades e promoções por email?</label>
+          </div>
+          <div class="mb-3">
+            <label for="nivel-satisfacao" class="form-label">Nível de satisfação</label>
+            <input type="range" class="form-range input-range" min="0" max="5" id="nivel-satisfacao" />
+          </div>
+          <button type="submit" class="btn w-100 botao-padrao py-2 fw-bold">Enviar</button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <!-- canvas-1 -->
@@ -317,14 +355,14 @@
 
   <!-- modal 1 - Cafés Tradicionais -->
 
-  <div class="modal fade" id="cafesTradModal" tabindex="-1" aria-labelledby="ModalCafesTradicionais" aria-hidden="true">
+  <article class="modal fade" id="cafesTradModal" tabindex="-1" aria-labelledby="ModalCafesTradicionais" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-        <div class="modal-header">
+        <header class="modal-header">
           <h2 class="modal-title fs-5 fw-bold" id="cafesTradModal">Cafés tradicionais</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body d-flex flex-column align-items-center">
+        </header>
+        <section class="modal-body d-flex flex-column align-items-center">
           <img src="./assets/produtos-cafe-tradicional.png" alt="Xicara de café">
           <p>O café Serenatto é conhecido por seus blends tradicionais e saborosos, que agradam aos amantes da bebida.
             Nossos grãos são cuidadosamente selecionados e torrados para produzir um aroma rico e sabor equilibrado.</p>
@@ -332,24 +370,24 @@
             de
             grãos com notas de chocolate e caramelo. Outra opção popular é o "Café Italiano", um café expresso encorpado
             e intenso. Já o "Café Cappuccino" é uma escolha clássica para quem prefere uma bebida cremosa e suave.</p>
-        </div>
-        <div class="modal-footer">
+        </section>
+        <footer class="modal-footer">
           <button type="button" class="btn w-25 botao-padrao mx-auto" data-bs-dismiss="modal">Fechar</button>
-        </div>
+        </footer>
       </div>
     </div>
-  </div>
+  </article>
 
   <!-- modal 2 - Cafés Especiais -->
 
-  <div class="modal fade" id="cafesEspModal" tabindex="-1" aria-labelledby="ModalCafesEspeciais" aria-hidden="true">
+  <article class="modal fade" id="cafesEspModal" tabindex="-1" aria-labelledby="ModalCafesEspeciais" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-        <div class="modal-header">
+        <header class="modal-header">
           <h2 class="modal-title fs-5 fw-bold" id="cafesEspModal">Cafés tradicionais</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body d-flex flex-column align-items-center">
+        </header>
+        <section class="modal-body d-flex flex-column align-items-center">
           <img src="./assets/produtos-cafe-especial.png" alt="Xicara de café capuccino">
           <p>Somos conhecidos também por nossos cafés especiais, que são cuidadosamente preparados com grãos
             selecionados de alta qualidade e técnicas de preparo precisas.</p>
@@ -359,107 +397,108 @@
             e resulta em uma bebida limpa e suave, ressaltando as notas sensoriais dos grãos. Além disso, oferecemos uma
             variedade de bebidas geladas, como o café gelado, que é preparado com grãos torrados escuros e servido com
             gelo e leite, resultando em uma bebida refrescante e saborosa.</p>
-        </div>
-        <div class="modal-footer">
+        </section>
+        <footer class="modal-footer">
           <button type="button" class="btn w-25 botao-padrao mx-auto" data-bs-dismiss="modal">Fechar</button>
-        </div>
+        </footer>
       </div>
     </div>
-  </div>
+  </article>
 
   <!-- modal 3 - Smoothies e Vitaminas -->
 
-  <div class="modal fade" id="smoothiesModal" tabindex="-1" aria-labelledby="SmoothiesVitaminasEspeciaisModal"
+  <article class="modal fade" id="smoothiesModal" tabindex="-1" aria-labelledby="SmoothiesVitaminasEspeciaisModal"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-        <div class="modal-header">
+        <header class="modal-header">
           <h2 class="modal-title fs-5 fw-bold" id="smoothiesModal">Smoothies e Vitaminas</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body d-flex flex-column align-items-center">
+        </header>
+        <section class="modal-body d-flex flex-column align-items-center">
           <img src="./assets/produtos-vitaminas.png" alt="Copos de vitamina">
           <p>Somos conhecidos também por nossas vitaminas, que são cuidadosamente preparados com frutas
             selecionadas de alta qualidade e técnicas de preparo precisas.</p>
           <p class="mb-0">As vitaminas são moléculas orgânicas fundamentais para nossa saúde e encontradas em nossos
             alimentos. Apesar de serem essenciais, as vitaminas não precisam ser ingeridas em grande quantidade, como é
             o caso dos carboidratos.</p>
-        </div>
-        <div class="modal-footer">
+        </section>
+        <footer class="modal-footer">
           <button type="button" class="btn w-25 botao-padrao mx-auto" data-bs-dismiss="modal">Fechar</button>
-        </div>
+        </footer>
       </div>
     </div>
-  </div>
+  </article>
 
   <!-- modal 4 - Pães e Focaccias -->
 
-  <div class="modal fade" id="paesModal" tabindex="-1" aria-labelledby="PaesEFocacciasModal" aria-hidden="true">
+  <article class="modal fade" id="paesModal" tabindex="-1" aria-labelledby="PaesEFocacciasModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-        <div class="modal-header">
+        <header class="modal-header">
           <h2 class="modal-title fs-5 fw-bold" id="paesModal">Pães e Focaccias</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body d-flex flex-column align-items-center">
+        </header>
+        <section class="modal-body d-flex flex-column align-items-center">
           <img src="./assets/produtos-paes.png" alt="Cesta com diversos tipos de pães">
           <p>Temos diversos tipos de pães feitos com as melhores tecnicas e com muito carinho para você, vale a pena
             conferir</p>
           <p class="mb-0">O pão, alimento preparado com farinha, geralmente de trigo ou outro cereal, água e sal, está
             presente na mesa de todos os povos e classes sociais.</p>
-        </div>
-        <div class="modal-footer">
+        </section>
+        <footer class="modal-footer">
           <button type="button" class="btn w-25 botao-padrao mx-auto" data-bs-dismiss="modal">Fechar</button>
-        </div>
+        </footer>
       </div>
     </div>
-  </div>
+  </article>
 
   <!-- modal 5 - Doces -->
 
-  <div class="modal fade" id="docesModal" tabindex="-1" aria-labelledby="DocesModal" aria-hidden="true">
+  <article class="modal fade" id="docesModal" tabindex="-1" aria-labelledby="DocesModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-        <div class="modal-header">
+        <header class="modal-header">
           <h2 class="modal-title fs-5 fw-bold" id="docesModal">Doces</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body d-flex flex-column align-items-center">
+        </header>
+        <section class="modal-body d-flex flex-column align-items-center">
           <img src="./assets/produtos-doces.png" alt="Bolo com cobertura de morango">
           <p>Aqui nos temos os melhores bolos, produzidos diariamente com todo o carinho e cuidado necessário para
             adoçar o seu dia e torná-lo melhor.</p>
           <p class="mb-0">Temos diversos bolos aqui e a pronta entrega, porém fazemos sua encomenda para datas especiais
             com todas as especifidades desejadas.</p>
-        </div>
-        <div class="modal-footer">
+        </section>
+        <footer class="modal-footer">
           <button type="button" class="btn w-25 botao-padrao mx-auto" data-bs-dismiss="modal">Fechar</button>
-        </div>
+        </footer>
       </div>
     </div>
-  </div>
+  </article>
 
   <!-- modal 6 - Salgados -->
 
-  <div class="modal fade" id="salgadosModal" tabindex="-1" aria-labelledby="salgadosModal" aria-hidden="true">
+  <article class="modal fade" id="salgadosModal" tabindex="-1" aria-labelledby="salgadosModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-        <div class="modal-header">
+        <header class="modal-header">
           <h2 class="modal-title fs-5 fw-bold" id="salgadosModal">Salgados</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body d-flex flex-column align-items-center">
+        </header>
+        <section class="modal-body d-flex flex-column align-items-center">
           <img src="./assets/produtos-salgados.png" alt="Pizza de queijo">
           <p>Aqui nos temos os melhores salgados, ofertamos uma grande variedade, desde coxinhas, pastéis, risóles, até
             pedaços de pizza.</p>
-          <p class="mb-0">Venha buscar o seu, caso não queira ou consiga vir até nós, peça por delivery que nós levamos quentinho e de forma rápida para você!
+          <p class="mb-0">Venha buscar o seu, caso não queira ou consiga vir até nós, peça por delivery que nós levamos
+            quentinho e de forma rápida para você!
           </p>
-        </div>
-        <div class="modal-footer">
+        </section>
+        <footer class="modal-footer">
           <button type="button" class="btn w-25 botao-padrao mx-auto" data-bs-dismiss="modal">Fechar</button>
-        </div>
+        </footer>
       </div>
     </div>
-  </div>
+  </article>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">

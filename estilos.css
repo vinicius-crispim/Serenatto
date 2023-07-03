@@ -58,3 +58,7 @@ body {
 .accordion-bg button:hover{
   background: var(--marrom-escuro);
 }
+
+.input-range::-webkit-slider-thumb{
+  background: var(--marrom-claro);
+}
