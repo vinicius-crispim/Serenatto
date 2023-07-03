@@ -62,3 +62,8 @@ body {
 .input-range::-webkit-slider-thumb{
   background: var(--marrom-claro);
 }
+
+footer,
+.item-footer{
+  background: var(--marrom-claro);
+}
